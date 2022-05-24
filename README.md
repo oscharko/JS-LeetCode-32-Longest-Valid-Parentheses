@@ -16,7 +16,7 @@ Given a string containing just the characters '(' and ')', find the length of th
 - Output: 0
 
 ## first Solution
-[LeetCode](https://leetcode.com/submissions/detail/706157760/)
+[LeetCode](https://leetcode.com/submissions/detail/706179770/)
 
 # final Solution
 [LeetCode]()

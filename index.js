@@ -45,6 +45,30 @@ let s = "(((())))(";
 //   return v[3];
 // };
 
+//const longestValidParentheses = function (s) {
+//   let temporary = 0,
+//     storage = Array(s.length).fill(0),
+//     helper = function (index) {
+//       return index >= 0 ? storage[index] : 0;
+//     },
+//     target = 0;
+
+//   for (let i = 1; i < s.length; i++) {
+//     if (s[i] === ")") {
+//       if (s[i - 1] === "(") {
+//         storage[i] = helper(i - 2) + 2;
+//       } else {
+//         temporary = i - storage[i - 1] - 1;
+//         if (temporary >= 0 && s[temporary] === "(") {
+//           storage[i] = storage[i - 1] + helper(temporary - 1) + 2;
+//         }
+//       }
+//       target = Math.max(...storage);
+//     }
+//   }
+//   return target;
+// };
+  
 const longestValidParentheses = function (s) {
   /*
   v description:
@@ -67,9 +91,9 @@ const longestValidParentheses = function (s) {
       if (s[i - 1] === "(") {
         v[1][i] = v[2](i - 2) + 2;
       } else {
-        v[4] = i - v[1][i - 1] - 1;
-        if (v[4] >= 0 && s[v[4]] === "(") {
-          v[1][i] = v[1][i - 1] + v[2](v[4] - 1) + 2;
+        v[0] = i - v[1][i - 1] - 1;
+        if (v[0] >= 0 && s[v[0]] === "(") {
+          v[1][i] = v[1][i - 1] + v[2](v[0] - 1) + 2;
         }
       }
       v[3] = Math.max(...v[1]);
