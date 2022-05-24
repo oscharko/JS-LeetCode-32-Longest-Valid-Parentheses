@@ -16,9 +16,9 @@ Given a string containing just the characters '(' and ')', find the length of th
 - Output: 0
 
 ## first Solution
-[LeetCode]()
+[LeetCode](https://leetcode.com/submissions/detail/706157760/)
 
 # final Solution
 [LeetCode]()
 
-[![Run on Repl.it](https://repl.it/badge/github/oscharko/)](https://replit.com/@oscharko/)
+[![Run on Repl.it](https://repl.it/badge/github/oscharko/JS-LeetCode-32-Longest-Valid-Parentheses)](https://replit.com/@oscharko/JS-LeetCode-32-Longest-Valid-Parentheses)
